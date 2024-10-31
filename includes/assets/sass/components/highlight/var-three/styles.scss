@@ -1,0 +1,70 @@
+@import "../../../base/colors/colors.scss";
+@import "../../../base/typography/typography.scss";
+
+.highlight__image figure {
+    width: 100%;
+    height: 410px;
+}
+.highlight__image figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.topper {
+    font-family: $vox-font-family-principal;
+    color: $vox-color-opovo-neutral-dark;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+.title__matter {
+    font-family: $vox-font-family-principal;
+    color: $vox-color-opovo-neutral-darker;
+    font-size: 3rem;
+    font-weight: bold;
+}
+a:hover .title__matter, a:hover h6 {
+    color: $vox-color-opovo-primary-medium;
+    text-decoration: underline;
+}
+.matter-emphasis {
+    font-family: $vox-font-family-principal;
+    color: $vox-color-opovo-neutral-darker;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+.separator__top {
+    border-top: 1px solid $vox-color-opovo-neutral-fair;
+    padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .title__matter {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .matter-emphasis {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    .highlight__image figure {
+        height: 228px;
+    }
+}
+@media (max-width: 425px) {
+    .title__matter {
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+    .matter-emphasis {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    .highlight__image figure {
+        height: 233px;
+    }
+}
+
