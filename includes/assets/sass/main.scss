@@ -1,3 +1,6 @@
+@import "../sass/base/typography/typography.scss";
+@import "../sass/base/colors/colors.scss";
+
 * {
     margin: 0;
     padding: 0;
@@ -6,4 +9,37 @@
 
 a {
     text-decoration: none;
+}
+
+.topper {
+    font-family: $vox-font-family-principal;
+    color: $vox-color-opovo-neutral-dark;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.title__matter {
+    font-family: $vox-font-family-principal;
+    color: $vox-color-opovo-neutral-darker;
+    font-weight: bold;
+}
+
+a:hover .title__matter, a:hover h6 {
+    color: #1B406D;
+    text-decoration: underline;
+}
+
+.matter-emphasis {
+    font-family: $vox-font-family-principal;
+    color: $vox-color-opovo-neutral-darker;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.separator__top {
+    border-top: 1px solid $vox-color-opovo-neutral-fair;
+    padding-top: 20px;
 }

@@ -6,4 +6,39 @@
 
 a {
   text-decoration: none;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.topper {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #555555;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.title__matter {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #1E1E1E;
+  font-weight: bold;
+}
+
+a:hover .title__matter, a:hover h6 {
+  color: #1B406D;
+  text-decoration: underline;
+}
+
+.matter-emphasis {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #1E1E1E;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.separator__top {
+  border-top: 1px solid #DFDFDF;
+  padding-top: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
