@@ -6,6 +6,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../includes/assets/sass/vendors/bootstrap/grid.min.css" as="style">
+    <link rel="stylesheet" href="../includes/assets/sass/vendors/bootstrap/bootstrap.min.css" as="style">
     <link rel="stylesheet" href="../includes/assets/sass/main.css" as="style">
     <!-- CSS -->
 
