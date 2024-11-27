@@ -1,0 +1,27 @@
+.box-bigger img {
+  height: 288px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.box__news img {
+  height: 112px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .box-bigger figure img {
+    height: 233px;
+  }
+  .box-bigger figure {
+    margin-bottom: 12px !important;
+  }
+}
+@media (max-width: 991px) {
+  .box-bigger figure img {
+    height: 241px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
