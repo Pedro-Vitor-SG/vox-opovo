@@ -11,10 +11,10 @@ a {
 .topper {
   font-family: "Roboto Condensed", sans-serif;
   color: #555555;
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.8px;
 }
 
 .title__matter {
@@ -23,29 +23,109 @@ a {
   font-weight: bold;
 }
 
-a:hover .title__matter, a:hover h6 {
+a:hover .title__matter,
+a:hover h6,
+a:hover h3 {
   color: #1B406D;
   text-decoration: underline;
+}
+
+.title__matter {
+  font-size: 28px;
+  margin-bottom: 0.75rem;
 }
 
 .matter-emphasis {
   font-family: "Roboto Condensed", sans-serif;
   color: #1E1E1E;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 1.2;
   font-weight: bold;
 }
 
-.separator__top {
-  border-top: 1px solid #DFDFDF;
-  padding-top: 20px;
+.content__related a::before {
+  content: "";
+  display: block;
+  max-width: 0.5625rem;
+  width: 100%;
+  height: 0.625rem;
+  background-image: url("https://www.opovo.com.br/reboot_portal/public/assets/img/icon/icon-relacionados.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
 }
 
 .content__related h3 {
   font-family: "Roboto Condensed", sans-serif;
   color: #1E1E1E;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+[class*=text-truncate] {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.text-truncate-4 {
+  -webkit-line-clamp: 4;
+}
+
+.separator__top {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  border-top: 0.0625rem solid #DFDFDF;
+}
+
+@media (min-width: 768px) {
+  .title__matter {
+    font-size: 32px;
+    margin-bottom: 0.5rem;
+  }
+  .content__related h3 {
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+  }
+  .separator__md__top {
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    position: relative;
+    border-top: 0.0625rem solid #DFDFDF;
+  }
+  .separator__md__none {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .title__matter {
+    font-size: 40px;
+    margin-bottom: 0.25rem;
+  }
+  .content__related h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+  }
+  .separator__lg__top {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    border-top: 0.0625rem solid #DFDFDF;
+  }
+  .separator__lg__none {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
