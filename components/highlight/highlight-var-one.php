@@ -4,6 +4,8 @@
 
 
 <section class="container-xxl my-5">
+  <h1 class="title__matter">VARIAÇÃO 1</h1>
+
   <div class="row ">
     <div class="col-lg-4 col-md-6 box-bigger">
       <figure class="m-0">
