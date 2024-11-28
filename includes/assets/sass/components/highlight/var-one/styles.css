@@ -4,12 +4,6 @@
   object-fit: cover;
 }
 
-.box__news img {
-  height: 112px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
 @media (max-width: 767px) {
   .box-bigger figure img {
     height: 233px;
