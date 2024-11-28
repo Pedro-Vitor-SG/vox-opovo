@@ -38,12 +38,11 @@ a:hover h3 {
 .matter-emphasis {
     font-family: $vox-font-family-principal;
     color: $vox-color-opovo-neutral-darker;
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 1.2;
     font-weight: bold;
+    margin: 0;
 }
-
-
 
 .content__related a::before {
     content: '';
@@ -90,6 +89,13 @@ a:hover h3 {
     position: relative;
     border-top: 0.0625rem solid #DFDFDF;
 }
+
+.box__news img {
+    border-radius: 8px;
+    object-fit: cover;
+    height: 92px;
+}
+
 @media (min-width: 768px) {
     .title__matter {
         font-size: 32px;
@@ -110,6 +116,10 @@ a:hover h3 {
         padding: 0;
         margin: 0;
     }
+    .box__news img {
+        height: 93px;
+
+    }
 }
 
 @media (min-width: 992px) {
@@ -121,6 +131,9 @@ a:hover h3 {
         margin-bottom: 0.25rem;
         font-size: 1rem;
     }
+    .matter-emphasis{
+        font-size: 1.25rem;
+    }
     .separator__lg__top {
         padding-top: 2rem;
         margin-top: 2rem;
@@ -131,5 +144,8 @@ a:hover h3 {
         border: 0;
         padding: 0;
         margin: 0;
+    }
+    .box__news img {
+        height: 112px;
     }
 }
